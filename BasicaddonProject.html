@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favourite Writer</title>
+    <style>
+      body {
+        background-color: lightblue;
+        color: navy;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+      }
+
+      .dark-theme {
+        background-color: #121212;
+        color: white;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      .theme-button {
+        background-color: darkblue;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px auto;
+      }
+
+      .theme-button:hover {
+        color: steelblue;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .grid-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .grid-container img:hover {
+        transform: scale(1.05);
+      }
+
+      button {
+        background-color: black;
+        color: steelblue;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        color: navy;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button" onclick="toggleTheme()">
+      Toggle Dark Theme
+    </button>
+
+    <h1>Danielle Steel</h1>
+    <h2>Favourite Books From Danielle Steel</h2>
+
+    <div class="grid-container">
+      <img
+        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLuO-GkuV1DRIrUfJRIfDhVrl3O4uyHWXNt2UVpnr7gUnqh9DQ80URjz9F0T288QeYYqTSl7ZxwTB3HPSs2uKGHPplAqjdS1d3Z1voWo_ysxH45DS_N4qLSA"
+        alt="book 1" />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQoExm__T7Cmi0MkdR-R4EH_jpe91iQyaSUiVVfy33Z8ziWRcZxkrquFCvHFTT-GLHgVR2aOC3-7bziVGw-1JdmW4gIMgUD4Q"
+        alt="book 2" />
+      <img
+        src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSBkSRiGYVZX32kQCDbUU7bFg6ZT3UmbPbnmgZuTXS7n5JrDtPsTGuZaCw8BdL3Jjd2VZ_xrI2e3IDnjiNXIGecH4cE3REUUCtobQ-Mc_IY9qcm4BZuDs8v"
+        alt="book 3" />
+      <img
+        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQibY5NctEMmlZft8UfGnDgdNlnQC1EGWNxbYgSQAgDtUwJV9mSL79JSsD0gqbZaYZ8udAQyhGtC84caNITVP6YkAZH6cTp-w"
+        alt="book 4" />
+    </div>
+
+    <p>
+      Danielle Steel is a bestselling American author known for her prolific
+      output of romance and drama novels. With over 190 books to her name, she
+      is one of the world’s best-selling authors, having sold more than 800
+      million copies globally. Her books often center on themes like:
+    </p>
+
+    <ul style="list-style: none; padding: 0">
+      <li>• Love and Heartbreak</li>
+      <li>• Family dynamics</li>
+      <li>• Resilience in the face of adversity</li>
+      <li>• Glamorous yet troubled lives</li>
+      <li>• Strong female protagonists</li>
+    </ul>
+
+    <button
+      onclick="alert('Explore Danielle Steel\'s books online or at your local library!')">
+      Read Some Danielle Steel
+    </button>
+
+    <footer>Coded with ❤️ by Jennifer Oblitey</footer>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-theme");
+      }
+    </script>
+  </body>
+</html>

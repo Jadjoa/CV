@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+    <style>
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: 2fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-gallery">
+      <img
+        src="https://t4.ftcdn.net/jpg/02/44/69/29/240_F_244692979_t2oCOiISldR1fynEcARDEGr1jWEIF12z.jpg"
+        alt="Dubai" />
+      <img
+        src="https://t4.ftcdn.net/jpg/01/74/86/13/240_F_174861327_m5qyWQ0wunffdH7D1t51Y2eb1cjXHBAu.jpg"
+        alt="Copenhagen" />
+      <img
+        src="https://t4.ftcdn.net/jpg/01/80/78/75/240_F_180787547_2tJQRGs7f6QMuTetPwh5SxzafHLcxd8q.jpg"
+        alt="London" />
+      <img
+        src="https://t4.ftcdn.net/jpg/02/05/44/79/240_F_205447933_zACDZX5Q73kmysZHMh51zWkEjkF5vMzk.jpg"
+        alt="Paris" />
+    </div>
+  </body>
+</html>

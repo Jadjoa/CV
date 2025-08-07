@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Beautiful World Of Cats</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #e0f7fa, #fff);
+        line-height: 1.6;
+      }
+      .container {
+        padding: 20px;
+        margin: 30px auto;
+        max-width: 700px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #00796b;
+      }
+      h2 {
+        font-size: 1.5em;
+        color: #004d40;
+      }
+      .highlight {
+        color: #d81b60;
+        font-weight: bold;
+      }
+      p {
+        font-size: 1em;
+        color: #333;
+      }
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+      a {
+        color: #0288d1;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 1em;
+        background: linear-gradient(to right, #4db6ac, #00796b);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: linear-gradient(to right, #00796b, #004d40);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Welcome to <span class="highlight">The Beautiful World of Cats</span>
+      </h1>
+      <h2>
+        Cats Are Agile Creatures That Have Always Awed Us With Their Graceful
+        Catwalk
+      </h2>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/169/939/original/Jennifer_s_Final_Homework.jpg?1751931405" alt="">
+      <p>
+        Once worshipped as gods in some cultures, cats are built differently and
+        truly fascinating in many ways. They possess an unmatched combination of
+        strength, flexibility, and elegance. There are many different kinds of
+        cats, each with its own special traits. The fluffy Persian is known for
+        its calm demeanor and luxurious coat, while the slender Siamese charms
+        with its vocal nature and striking blue eyes. Maine Coons are gentle
+        giants, often described as dog-like in behavior, while Sphynx cats stand
+        out with their hairless, warm skin and affectionate nature. From the
+        playful Bengal with leopard-like spots to the sweet Ragdoll that goes
+        limp when held, every cat breed offers a new way to appreciate the
+        diversity and beauty of the feline world.
+      </p>
+      <hr />
+      <div class="cta-section">
+        <p>What is your favourite Cat?</p>
+        <button id="checkBtn">What is your favourite cat</button>
+      </div>
+      <p>Coded By Jennifer Adjoa Oblitey</p>
+
+      <script>
+        document.getElementById('checkBtn').addEventListener('click', function () {
+          let cats = prompt("How many cats do you have?");
+          if (cats !== null) {
+            cats = parseInt(cats);
+            if (isNaN(cats)) {
+              alert("Please enter a valid number.");
+            } else if (cats > 0) {
+              alert("Wonderful! You are an ailurophile, keep up the good work");
+            } else {
+              alert("That is sad! Adopt a cat!");
+            }
+          }
+        });
+      </script>
+    </body>
+        </html>
+
